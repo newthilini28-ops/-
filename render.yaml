@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: tamil-letter-helper
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
